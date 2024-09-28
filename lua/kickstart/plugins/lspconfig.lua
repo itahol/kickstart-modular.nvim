@@ -87,7 +87,7 @@ return {
           -- Jump to the type of the word under your cursor.
           --  Useful when you're not sure what type a variable is and you want to see
           --  the definition of its *type*, not where it was *defined*.
-          map('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
+          map('gt', require('telescope.builtin').lsp_type_definitions, '[G]oto [T]ype Definition')
 
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.
@@ -181,6 +181,7 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         bashls = {},
+        yamlls = {},
         --
 
         lua_ls = {
